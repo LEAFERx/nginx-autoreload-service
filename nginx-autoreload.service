@@ -1,0 +1,8 @@
+[Unit]
+Description=nginx config monitor
+
+[Service]
+ExecStart=/usr/bin/python3 /root/nginx-conf-monitor.py
+
+[Install]
+WantedBy=multi-user.target
